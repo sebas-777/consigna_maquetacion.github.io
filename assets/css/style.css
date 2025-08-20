@@ -1,0 +1,63 @@
+/*DEFINICION DE ESTILOS GENERALES*/
+:root{
+    --color-principal:#fafafa;
+    --color-segundario:#141414;
+    --color-footer:#dbdbdb;
+
+    --color-icon:#4caf50;
+    --color-boton:#ffd953;
+
+}
+
+/*ESTILOS GENERALES*/
+html{
+    font-size: 16px;
+}
+
+body{
+   font-family: 'Open Sans', sans-serif;
+   background-color: var(--color-principal);
+}
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-principal);
+}
+
+.menu__img img{
+    max-width: 100%;
+    height: 50px;
+    width: 54px;
+}
+
+.menu__list{
+    display: flex;
+    gap: 1rem;
+    
+}
+.menu__link{
+    color: var(--color-segundario);
+    font-weight: bold;
+
+}
+
+.menu__hamburguer{
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--color-segundario);
+}
+
+/*ESTILOS RESPOSNIVE*/
+@media(max-width: 768px){
+    .menu{
+        flex-direction: column;
+    }
+    .menu__list{ 
+        display: flex;
+        flex-direction: column;
+    }
+}
