@@ -3,8 +3,8 @@
     --color-principal:#fafafa;
     --color-segundario:#141414;
     --color-footer:#dbdbdb;
-
     --color-icon:#4caf50;
+    --color-icon-desktop:#69a7ff;
     --color-boton:#ffd953;
 
 }
@@ -88,13 +88,52 @@ body{
     height: 100%;
 }
 
-.user-info__general{
-    text-align: center;
+.user-info__aboutme{ 
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
     background: var(--color-segundario);
     color: var(--color-principal);
+    gap: 15rem;
+    padding: 12rem;
     
+} 
+
+
+.menu__icon {
+    color: var(--color-icon);
+    font-size: 10.5rem;
+    padding: 1rem;
+} 
+
+
+.user-info__subtitule{
+    font-weight: bold;
+    text-align: center;
+    padding: 3rem;
+} 
+
+.user-info__services{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem;
 }
 
+.menu-icon__service{
+    color: var(--color-icon-desktop);
+    font-size: 10.5rem;
+    padding: 1rem;
+
+} 
+
+.user-info__service{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+}
 
 /*ESTILOS RESPOSNIVE*/
 
@@ -121,21 +160,34 @@ body{
     margin: 2rem ;
 
     
-}
+    }
 
     .user-info__titule{
     text-align: center;
     
     } 
 
+    .user-info__aboutme{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+   
+    }  
 
+    .menu__icon {
+    color: var(--color-icon);
+    font-size: 5.5rem;
     
+    }
+
+    .user-info__services{
+    display: flex;
+    flex-direction: column;
     
+    }
+
+
+
 }
-
-
-
-
-
-
-
